@@ -1,0 +1,1 @@
+*:any:/usr/local/sbin/dnf-post-transaction-reporting.sh '${state}' '${name}' '${epoch}' '${ver}' '${rel}' '${arch}' '${repoid}'

@@ -1,0 +1,14 @@
+#action_key:transaction_state:command
+# action_key can be: pkgglob, /path/to/file (wildcards allowed)
+# transaction_state can be: install,update,remove,any
+# command can be: any shell command
+#  the following variables are allowed to be passed to any command:
+#   $name - package name
+#   $arch - package arch
+#   $ver - package version
+#   $rel - package release
+#   $epoch - package epoch
+#   $repoid - package repository id
+#   $state - text string of state of the package in the transaction set
+#
+*:any:/usr/local/sbin/yum-post-transaction-reporting.sh '$state' '$name' '$epoch' '$ver' '$rel' '$arch' '$repoid'
