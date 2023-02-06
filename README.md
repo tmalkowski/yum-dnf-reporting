@@ -4,9 +4,9 @@ Keep track of yum/dnf transactions (install, remove, update, history rollback, e
 
 These files should be owned by root and not world/group readable.
 
-These scripts very basic, and are intended for use with a specific version of splunk, and as such they should be treated as example / reference code when implementing in your environment.
+These scripts are pretty basic, and are intended for use with a specific version of splunk. As such, they should be treated as example / reference code when implementing in your environment.
 
-Edit the `*-post-transaction-reporting.sh` scripts and change `SPLUNK_URL` + `SPLUNK_AUTHORIZATION` values as appropriate.
+To use these as-is, be sure to edit the `*-post-transaction-reporting.sh` scripts and change `SPLUNK_URL` + `SPLUNK_AUTHORIZATION` values as appropriate.
 
 For yum-based systems: (e.g. RHEL 6+7)
 - `yum install yum-plugin-post-transaction-actions`
